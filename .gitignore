@@ -1,7 +1,7 @@
-#########################################################################################
-# JetBrains                                                                             #
-# https://raw.githubusercontent.com/github/gitignore/master/Global/JetBrains.gitignore  #
-#########################################################################################
+################################################################################
+# JetBrains                                                                    #
+# https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore   #
+################################################################################
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -75,10 +75,10 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-#########################################################################################
-# Java                                                                                  #
-# https://github.com/github/gitignore/blob/master/Java.gitignore                        #
-#########################################################################################
+################################################################################
+# Java                                                                         #
+# https://github.com/github/gitignore/blob/master/Java.gitignore               #
+################################################################################
 
 # Compiled class file
 *.class
@@ -104,14 +104,10 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-#########################################################################################
-# Gradle                                                                                #
-# https://github.com/github/gitignore/blob/master/Gradle.gitignore                      #
-#########################################################################################
-
-.gradle
-**/build/
-!src/**/build/
+################################################################################
+# Gradle                                                                       #
+# https://github.com/github/gitignore/blob/master/Gradle.gitignore             #
+################################################################################
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -122,14 +118,10 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
-
-#########################################################################################
-# Vim                                                                                   #
-# https://github.com/github/gitignore/blob/master/Global/Vim.gitignore                  #
-#########################################################################################
+################################################################################
+# Vim                                                                          #
+# https://github.com/github/gitignore/blob/master/Global/Vim.gitignore         #
+################################################################################
 
 # Swap
 [._]*.s[a-v][a-z]
@@ -153,10 +145,10 @@ tags
 # Ignore Gradle build output directory
 build
 
-#########################################################################################
-# MacOS                                                                                 #
-# https://github.com/github/gitignore/blob/master/Global/macOS.gitignore                #
-#########################################################################################
+################################################################################
+# MacOS                                                                        #
+# https://github.com/github/gitignore/blob/master/Global/macOS.gitignore       #
+################################################################################
 
 # General
 .DS_Store
