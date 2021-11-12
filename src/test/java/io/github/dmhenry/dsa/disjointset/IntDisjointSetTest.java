@@ -5,7 +5,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -45,12 +44,7 @@ public interface IntDisjointSetTest {
 
     static Stream<Arguments> params() {
         return Stream.of(
-                Arguments.arguments(Collections.emptyList()),
                 Arguments.arguments(List.of(pair(0, 0), pair(1, 1), pair(2, 2), pair(3, 3), pair(4, 4))),
-
-                Arguments.arguments(List.of(pair(0, 1))),
-                Arguments.arguments(List.of(pair(1, 0))),
-
                 Arguments.arguments(List.of(pair(0, 1), pair(0, 2))),
                 Arguments.arguments(List.of(pair(0, 1), pair(2, 0))),
                 Arguments.arguments(List.of(pair(1, 0), pair(2, 0))),
@@ -59,12 +53,10 @@ public interface IntDisjointSetTest {
                 Arguments.arguments(List.of(pair(2, 0), pair(0, 1))),
                 Arguments.arguments(List.of(pair(2, 0), pair(1, 0))),
                 Arguments.arguments(List.of(pair(0, 2), pair(1, 0))),
-
                 Arguments.arguments(List.of(pair(0, 1), pair(3, 4)), pair(2, 3), pair(4, 1)),
                 Arguments.arguments(List.of(pair(0, 1), pair(3, 4)), pair(4, 3)),
                 Arguments.arguments(List.of(pair(0, 1), pair(1, 4)), pair(4, 3)),
-                Arguments.arguments(List.of(pair(0, 1), pair(0, 2)))
-        );
+                Arguments.arguments(List.of(pair(0, 1), pair(0, 2))));
     }
 
     @SuppressWarnings("unused")

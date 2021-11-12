@@ -190,8 +190,8 @@ interface IntDisjointSet {
      */
     class OptimizedImpl implements IntDisjointSet { //{{{
 
-        private int[] parent;
-        private int[] rank;
+        private final int[] parent;
+        private final int[] rank;
 
         OptimizedImpl(int size) {
             parent = new int[size];
