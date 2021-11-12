@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public interface DisjointSetTest {
 
-    int SIZE = 6;
+    List<Character> CHAR_ELEMENTS = List.of('a', 'b', 'c', 'd', 'e', 'f', 'g');
 
     DisjointSet<Character> strategy();
 
@@ -24,10 +24,7 @@ public interface DisjointSetTest {
     default void unionFind(List<Pair<Character>> unionPairs) {
         DisjointSet<Character> disjointSetStrategy = strategy();
 
-        Set<Character> unseen = new HashSet<>();
-        for (char ch = 'a'; ch < 'a' + SIZE; ch++) {
-            unseen.add(ch);
-        }
+        Set<Character> unseen = new HashSet<>(CHAR_ELEMENTS);
 
         for (Pair<Character> unionPair : unionPairs) {
             disjointSetStrategy.union(unionPair.x, unionPair.y);
@@ -50,7 +47,7 @@ public interface DisjointSetTest {
     class AssocDisjointSetImplTest implements DisjointSetTest {
         @Override
         public DisjointSet<Character> strategy() {
-            return new DisjointSet.AssocDisjointSetImpl<>('a', 'b', 'c', 'd', 'e', 'f');
+            return new DisjointSet.AssocDisjointSetImpl<>(CHAR_ELEMENTS);
         }
     }
 

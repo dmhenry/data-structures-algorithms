@@ -1,5 +1,6 @@
 package io.github.dmhenry.dsa.disjointset;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -15,7 +16,7 @@ interface DisjointSet<T> {
         private final Map<T, T> parents = new HashMap<>();
         private final Map<T, Integer> rank = new HashMap<>();
 
-        AssocDisjointSetImpl(T... elements) {
+        AssocDisjointSetImpl(Collection<T> elements) {
             for (T t : elements) {
                 parents.put(t, t);
                 rank.put(t, 0);
