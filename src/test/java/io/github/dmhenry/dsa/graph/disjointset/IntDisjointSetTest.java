@@ -1,4 +1,4 @@
-package io.github.dmhenry.dsa.disjointset;
+package io.github.dmhenry.dsa.graph.disjointset;
 
 import io.github.dmhenry.dsa.util.Pair;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -60,51 +60,51 @@ public interface IntDisjointSetTest {
     }
 
     @SuppressWarnings("unused")
-    class NaiveImplTest implements IntDisjointSetTest {
+    class NaiveImplTest implements IntDisjointSetTest { //{{{
         @Override
         public IntDisjointSet strategy() {
             return new IntDisjointSet.NaiveImpl(SIZE);
         }
-    }
+    } //}}}
 
     @SuppressWarnings("unused")
-    class QuickFindImplTest implements IntDisjointSetTest {
+    class QuickFindImplTest implements IntDisjointSetTest { //{{{
         @Override
         public IntDisjointSet strategy() {
             return new IntDisjointSet.QuickFindImpl(SIZE);
         }
-    }
+    } //}}}
 
     @SuppressWarnings("unused")
-    class QuickUnionImplTest implements IntDisjointSetTest {
+    class QuickUnionImplTest implements IntDisjointSetTest { //{{{
         @Override
         public IntDisjointSet strategy() {
             return new IntDisjointSet.QuickUnionImpl(SIZE);
         }
-    }
+    } //}}}
 
     @SuppressWarnings("unused")
-    class UnionByRankImplTest implements IntDisjointSetTest {
+    class UnionByRankImplTest implements IntDisjointSetTest { //{{{
         @Override
         public IntDisjointSet strategy() {
             return new IntDisjointSet.UnionByRankImpl(SIZE);
         }
-    }
+    } //}}}
 
     @SuppressWarnings("unused")
-    class PathCompressionImplTest implements IntDisjointSetTest {
+    class PathCompressionImplTest implements IntDisjointSetTest { //{{{
         @Override
         public IntDisjointSet strategy() {
             return new IntDisjointSet.PathCompressionImpl(SIZE);
         }
-    }
+    } //}}}
 
     @SuppressWarnings("unused")
-    class OptimizedImplTest implements IntDisjointSetTest {
+    class OptimizedImplTest implements IntDisjointSetTest { //{{{
         @Override
         public IntDisjointSet strategy() {
             return new IntDisjointSet.OptimizedImpl(SIZE);
         }
-    }
+    } //}}}
 
 }

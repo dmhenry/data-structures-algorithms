@@ -1,4 +1,4 @@
-package io.github.dmhenry.dsa.disjointset;
+package io.github.dmhenry.dsa.graph.disjointset;
 
 import io.github.dmhenry.dsa.util.Pair;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -44,11 +44,11 @@ public interface DisjointSetTest {
     }
 
     @SuppressWarnings("unused")
-    class AssocDisjointSetImplTest implements DisjointSetTest {
+    class AssocDisjointSetImplTest implements DisjointSetTest { //{{{
         @Override
         public DisjointSet<Character> strategy() {
             return new DisjointSet.AssocDisjointSetImpl<>(CHAR_ELEMENTS);
         }
-    }
+    } //}}}
 
 }

@@ -1,4 +1,4 @@
-package io.github.dmhenry.dsa.disjointset;
+package io.github.dmhenry.dsa.graph.disjointset;
 
 import java.util.Collection;
 import java.util.HashMap;
